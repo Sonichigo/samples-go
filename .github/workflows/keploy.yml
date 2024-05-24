@@ -9,12 +9,13 @@ on:
 jobs:
   my_job:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Keploy Report
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Test-Report
       uses: keploy/testgpt@main
       with:
-        working-directory: echo-sql
-        delay: 20
-        command: go run main.go handler.go
+        working-directory: /gin-mongo
+        delay: 10
+        command: go run .
         keploy-path: ./
