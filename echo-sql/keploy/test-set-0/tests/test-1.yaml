@@ -37,6 +37,7 @@ spec:
     assertions:
         noise:
             header.Date: []
+            body.ts: []
     created: 1700756456
 curl: |-
     curl --request POST \
