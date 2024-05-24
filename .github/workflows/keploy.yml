@@ -15,7 +15,7 @@ jobs:
     - name: Test-Report
       uses: keploy/testgpt@main
       with:
-        working-directory: /gin-mongo
+        working-directory: /echo-sql
         delay: 10
         command: go run .
         keploy-path: ./
